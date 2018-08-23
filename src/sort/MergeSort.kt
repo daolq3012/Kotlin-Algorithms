@@ -10,25 +10,25 @@ class MergeSort {
     /**
      * Method to do array merge sort of the passed
      * array of ints
-     * @param inputArr the array to sort
+     * @param arr the array to sort
      */
-    private fun sort(inputArr: IntArray) {
+    fun sort(arr: IntArray) {
         // check if there is only 1 element return
-        if (inputArr.size == 1) {
+        if (arr.size == 1) {
             return
         }
 
         // otherwise create two new arrays
-        val middleIndex = inputArr.size / 2
+        val middleIndex = arr.size / 2
 
         val left = IntArray(middleIndex)
         left.forEachIndexed { index, _ ->
-            left[index] = inputArr[index]
+            left[index] = arr[index]
         }
 
-        val right = IntArray(inputArr.size - left.size)
+        val right = IntArray(arr.size - left.size)
         right.forEachIndexed { index, _ ->
-            right[index] = inputArr[middleIndex + index]
+            right[index] = arr[middleIndex + index]
         }
 
         // do the recursive call with the new sorters
@@ -36,7 +36,7 @@ class MergeSort {
         sort(right)
 
         // merge the resulting arrays
-        merge(inputArr, left, right)
+        merge(arr, left, right)
     }
 
     /**
