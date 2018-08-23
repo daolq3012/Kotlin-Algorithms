@@ -7,14 +7,14 @@ import java.io.IOException
  * * Heap Sort Algorithm.
  * * @see: http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap07.htm
  */
-class HeapSort {
+class HeapSort : SortAlgorithms<ArrayList<Int>> {
 
-    fun sort(arr: ArrayList<Int>): ArrayList<Int> {
+    override fun sort(arr: ArrayList<Int>) {
         val count = arr.size
 
         // check if there is only 1 element return
         if (count == 1) {
-            return arr
+            return
         }
 
         //first place arr in max-heap order
@@ -30,7 +30,7 @@ class HeapSort {
             //max value will stay in its proper place
             endIndex--
         }
-        return arr
+        return
     }
 
     private fun buildMaxHeap(arr: ArrayList<Int>, count: Int) {
@@ -72,8 +72,9 @@ class HeapSort {
         @JvmStatic
         fun main(args: Array<String>) {
             val input = arrayListOf(6, 5, 3, 1, 8, 7, 2, 4)
-            val outPut = HeapSort().sort(input)
-            System.out.print("---------Result---------\n$outPut ")
+            val sortAlgorithms: SortAlgorithms<ArrayList<Int>> = HeapSort()
+            sortAlgorithms.sort(input)
+            System.out.print("---------Result---------\n$input ")
         }
     }
 }
