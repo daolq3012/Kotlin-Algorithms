@@ -5,14 +5,14 @@ import java.io.IOException
 /**
  * * Merge Sort Algorithm.
  */
-class MergeSort {
+class MergeSort : SortAlgorithms<IntArray> {
 
     /**
      * Method to do array merge sort of the passed
      * array of ints
      * @param arr the array to sort
      */
-    fun sort(arr: IntArray) {
+    override fun sort(arr: IntArray) {
         // check if there is only 1 element return
         if (arr.size == 1) {
             return
@@ -82,7 +82,8 @@ class MergeSort {
         @JvmStatic
         fun main(args: Array<String>) {
             val input = arrayListOf(6, 5, 3, 1, 8, 7, 2, 4).toIntArray()
-            MergeSort().sort(input)
+            val sortAlgorithms: SortAlgorithms<IntArray> = MergeSort()
+            sortAlgorithms.sort(input)
             System.out.print("---------Result---------\n${input.toMutableList()}")
         }
     }
