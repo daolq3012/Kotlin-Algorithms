@@ -79,3 +79,47 @@ __Properties__
 * The performance buildMaxHeap() operation is run once, and is O(n)
 * The performance siftDown() function is O(log n), and is called n times
 * Therefore performance of this algorithm is O(n + n log n) = O(n log n).
+
+
+## II. Search Algorithms
+
+### 2.1 Linear Search.
+<img src="images/search/linear.gif" width="400" height="164.4"/>
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Linear_search): linear search or sequential search is a method for finding a target value within a list. It sequentially checks each element of the list for the target value until a match is found or until all the elements have been searched
+
+__Properties__
+* Worst-case performance O(n)
+* Best-case performance O(1)
+* Average performance O(n)
+* Worst-case space complexity O(1) iterative
+
+
+### 2.2 Binary Search.
+
+
+### 2.3 Jump Search.
+
+
+### 2.4 Interpolation Search.
+
+
+### 2.5 Exponential Search.
+
+
+### 2.6 Sublist Search (Search a linked list in another list)
+
+
+### 2.7 Fibonacci Search.
+
+
+### 2.8 The Ubiquitous Binary Search.
+
+
+### 2.9 TernarySearch
+
+
+### 2.10 Saddleback Search
+
+
+### 2.11 Golden-section search
