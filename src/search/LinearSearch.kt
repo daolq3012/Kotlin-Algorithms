@@ -4,6 +4,7 @@ import java.io.IOException
 import java.util.*
 
 class LinearSearch : SearchAlgorithms<Int> {
+
     override fun findIndexOf(arr: ArrayList<Int>, value: Int): Int {
         for (i in 0 until arr.size) {
             if (arr[i].compareTo(value) == 0) {

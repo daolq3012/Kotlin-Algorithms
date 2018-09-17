@@ -108,6 +108,15 @@ __Properties__
 
 
 ### 2.3 Jump Search.
+<img src="images/search/jump.png" width="374.5" height="180"/>
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Jump_search): jump search or block search refers to a search algorithm for ordered lists. It works by first checking all items Lkm, where {\displaystyle k\in \mathbb {N} } k\in \mathbb {N}  and m is the block size, until an item is found that is larger than the search key. To find the exact position of the search key in the list a linear search.
+
+__Properties__
+* Before finally performing the linear search
+* For an k-level jump search the optimum block size ml for the [l^th] level (counting from 1) is [n^((k-l)/k)].
+* The modified algorithm will perform k backward jumps and runs in O([kn^(1/(k+1))]) time.
+* The list a linear search is performed on the sublist L[(k-1)m, km].
 
 
 ### 2.4 Interpolation Search.
