@@ -128,6 +128,14 @@ __Properties__
 
 
 ### 2.5 Exponential Search.
+<img src="images/search/exponential.png" width="640" height="134.5"/>
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Exponential_search): Exponential search allows for searching through a sorted, unbounded list for a specified input value (the search "key"). The algorithm consists of two stages. The first stage determines a range in which the search key would reside if it were in the list. In the second stage, a binary search is performed on this range.
+
+__Properties__
+* The first stage of the algorithm takes O(log i) time
+* The second part of the algorithm also takes O(log i) time
+* Calculated by summing the runtimes of the two stages, of O(log i) + O(log i) = 2 O(log i) = O(log i)
 
 
 ### 2.6 Sublist Search (Search a linked list in another list)
