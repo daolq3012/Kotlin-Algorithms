@@ -159,13 +159,19 @@ __Properties__
 * Average space complexity O(1)
 
 
-### 2.8 The Ubiquitous Binary Search.
+### 2.8 TernarySearch
+<img src="images/search/ternary.png" width="496" height="722"/>
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Ternary_search): A Ternary Search algorithm is a technique in computer science for finding the minimum or maximum of a unimodal function. A ternary search determines either that the minimum or maximum cannot be in the first third of the domain or that it cannot be in the last third of the domain, then repeats on the remaining third.
+
+__Properties__
+* Worst-case performance Θ(log3(n))
+* Best-case performance O(1)
+* Average performance Θ(log3(n))
+* Worst-case space complexity O(1)
 
 
-### 2.9 TernarySearch
+### 2.9 Saddleback Search
 
 
-### 2.10 Saddleback Search
-
-
-### 2.11 Golden-section search
+### 2.10 Golden-section search
