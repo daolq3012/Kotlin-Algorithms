@@ -139,6 +139,12 @@ __Properties__
 
 
 ### 2.6 Sublist Search (Search a linked list in another list)
+<img src="images/search/sublist.png" width="513.33" height="280"/>
+
+From [GeeksforGeeks](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list/): Given two linked lists, the task is to check whether the first list is present in 2nd list or not.
+
+__Properties__
+* Time Complexity : O(m*n) where m is the number of nodes in second list and n in first.
 
 
 ### 2.7 Fibonacci Search.
