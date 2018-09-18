@@ -148,6 +148,15 @@ __Properties__
 
 
 ### 2.7 Fibonacci Search.
+<img src="images/search/fibonacci.png" width="653.5" height="373.5"/>
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_search_technique): Fibonacci search technique is a method of searching a sorted array using a divide and conquer algorithm that narrows down possible locations with the aid of Fibonacci numbers.
+
+__Properties__
+* Worst case performance O(log n)
+* Best case performance  O(1)
+* Average case performance O(log n)
+* Average space complexity O(1)
 
 
 ### 2.8 The Ubiquitous Binary Search.
