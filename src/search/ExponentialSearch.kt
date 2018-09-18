@@ -3,12 +3,24 @@ package search
 import sort.HeapSort
 import java.io.IOException
 import java.util.*
-import kotlin.collections.ArrayList
 
-class BinarySearch : SearchAlgorithms<Int> {
+class ExponentialSearch : SearchAlgorithms<Int> {
 
     override fun findIndexOf(arr: ArrayList<Int>, value: Int): Int {
-        return binarySearch(arr, value, 0, arr.size - 1)
+        val size = arr.size
+
+        // If x is present at first location itself
+        if (arr[0] == value) {
+            return 0
+        }
+
+        // Find range for binary search by repeated doubling
+        var bound = 1
+        while (bound < size && arr[bound] <= value) {
+            bound *= 2
+        }
+
+        return binarySearch(arr, value, bound / 2, Math.min(bound + 1, size - 1))
     }
 
     /**
@@ -51,7 +63,7 @@ class BinarySearch : SearchAlgorithms<Int> {
             HeapSort().sort(dataInputs)
             System.out.print("---------Input---------\n$dataInputs\n")
 
-            val searchAlgorithms: SearchAlgorithms<Int> = BinarySearch()
+            val searchAlgorithms: SearchAlgorithms<Int> = ExponentialSearch()
             val randomInput = Random().nextInt(10)
             val result = searchAlgorithms.findIndexOf(dataInputs, randomInput)
             System.out.print("---------Result---------\n")
