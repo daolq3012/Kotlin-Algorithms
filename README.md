@@ -172,6 +172,15 @@ __Properties__
 
 
 ### 2.9 Saddleback Search
+<img src="images/search/saddleback.png" width="340" height="275"/>
+
+From [GeeksforGeeks](https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array): A Saddleback Search algorithm is a technique find an element in a given matrix such that each row and each column is sorted.
+
+__Properties__
+* Worst-case performance Θ(log3(n))
+* Best-case performance O(1)
+* Average performance Θ(log3(n))
+* Worst-case space complexity O(1)
 
 
 ### 2.10 Golden-section search
